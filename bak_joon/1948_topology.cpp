@@ -47,7 +47,7 @@ void topology_sort() {
 	while(!q.empty()) {
 		int y = q.front();
 		q.pop();
-		for(int i = 0; i < b[y].size; i++) {
+		for(int i = 0; i < b[y].size(); i++) {
 			Edge x = Edge(b[y][i].node, b[y][i].time);
 			// 최장 경로(임계경로)에 포함되는 간선인지 확인한다.
 			if(result[y] - result[x.node] == x.time) {

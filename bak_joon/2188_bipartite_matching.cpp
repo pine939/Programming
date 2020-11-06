@@ -5,7 +5,8 @@
 bool c[MAX];
 int n, m, s;
 
-void dfs(int x) {
+using namespace std;
+bool dfs(int x) {
 	// 연결된 모든 노드에 대해서 들어갈 수 있는지 시도합니다.
 	for(int i = 0; i < a[i].size(); i++) {
 		int t = a[i][x];

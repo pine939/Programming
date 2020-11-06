@@ -1,8 +1,7 @@
 #include<iostream>
 #include<vector>
 
-using namepsace std;
-
+using namespace std;
 bool dfs(int x) {
 	for (int i = 1; i <= a[x].size(); i++) {
 		int y = a[x][i];
@@ -18,6 +17,7 @@ bool dfs(int x) {
 }
 
 int main(void) {
+	int n;
 	scanf("%d", &n);
 	for(int i = 1; i <= n; i ++) {
 		int a,b,c;
